@@ -1,33 +1,29 @@
 # Advanced GridWorld DQN
 
-An implementation of a Deep Q-Network (DQN) agent for an advanced GridWorld environment.
-
-## Overview
-
-This project implements an advanced DQN agent capable of navigating a dynamic GridWorld environment. The environment features adjustable grid size, obstacle density, and dynamic obstacles.
+This project implements a Deep Q-Network (DQN) agent for a dynamic GridWorld environment with adjustable grid size, obstacle density, and dynamic obstacles.
 
 ## Features
 
-- Advanced DQN with LSTM layers
+- DQN with LSTM layers
 - Prioritized Experience Replay
 - Dynamic obstacle generation
-- Comprehensive analysis and visualization tools
+- Analysis and visualization tools
 
 ## Installation
 
-Clone the repository and install the required packages:
+Clone the repository and install dependencies:
 
-```
-git clone https://github.com/yourusername/advanced-gridworld-dqn.git
-cd advanced-gridworld-dqn
+```bash
+git clone https://github.com/charliec999/pathfinder.git
+cd pathfinder
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-Run the main script to train and evaluate the agent:
+Train and evaluate the agent:
 
-```
+```bash
 python main.py
 ```
 
@@ -35,27 +31,16 @@ python main.py
 
 - `AdvancedGridWorld`: Custom Gym environment
 - `AdvancedDQN`: Neural network model with LSTM layers
-- `PrioritizedReplayBuffer`: Implementation of prioritized experience replay
-- `AdvancedDQNAgent`: Agent class implementing the DQN algorithm
+- `PrioritizedReplayBuffer`: Prioritized experience replay
+- `AdvancedDQNAgent`: DQN algorithm implementation
 
 ## Analysis Tools
 
 - Training progress visualization
 - Q-value and state visitation analysis
-- Action distribution and feature importance analysis
-- Hyperparameter sensitivity analysis
-- Learning dynamics visualization
-
-## Results
-
-[Include key performance metrics and findings]
+- Action distribution, feature importance, and hyperparameter sensitivity
 
 ## Future Work
 
 - Multi-agent scenarios
-- Integration of additional RL algorithms (PPO, SAC)
-- Enhanced environmental dynamics
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- Integration of PPO, SAC
